@@ -16,6 +16,7 @@ int main() {
 
   Amar.setAge(19);
   std::cout << Amar.getAge() << "\n";
+  std::cout << "";
 
   return EXIT_SUCCESS;
 }

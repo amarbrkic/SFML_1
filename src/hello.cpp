@@ -12,10 +12,10 @@ public:
 class Worker : public Person {};
 
 int main() {
-  Worker Amar;
+  Worker* Amar = new Worker();
 
-  Amar.setAge(19);
-  std::cout << Amar.getAge() << "\n";
+  Amar->setAge(19);
+  std::cout << Amar->getAge() << "\n";
   std::cout << "";
 
   return EXIT_SUCCESS;

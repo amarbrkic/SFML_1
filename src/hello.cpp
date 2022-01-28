@@ -2,14 +2,9 @@
 #include <string>
 
 int main() {
-  uint32_t firstNumber = 55;
-
-  std::cout << firstNumber << "\n";
-
-  auto& copyOfFirstNumber = firstNumber;
-  copyOfFirstNumber = 77;
-
-  std::cout << firstNumber << "\n";
+  for (auto i : "hello world") {
+    std::cout << i << "\n";
+  }
 
   return EXIT_SUCCESS;
 }

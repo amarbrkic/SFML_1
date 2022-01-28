@@ -5,6 +5,7 @@ build:
 
 run:
 	@echo Output:
+	@echo -------
 	@echo
 	@./hello
 	@echo -------

@@ -1,22 +1,15 @@
 #include <iostream>
-
-class Person {
-private:
-  int age;
-
-public:
-  void setAge(int age) { this->age = age; }
-  int getAge() { return this->age; }
-};
-
-class Worker : public Person {};
+#include <string>
 
 int main() {
-  Worker* Amar = new Worker();
+  uint32_t firstNumber = 55;
 
-  Amar->setAge(19);
-  std::cout << Amar->getAge() << "\n";
-  std::cout << "";
+  std::cout << firstNumber << "\n";
+
+  auto& copyOfFirstNumber = firstNumber;
+  copyOfFirstNumber = 77;
+
+  std::cout << firstNumber << "\n";
 
   return EXIT_SUCCESS;
 }

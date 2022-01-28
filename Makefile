@@ -1,7 +1,7 @@
 all: build run clean
 
 build:
-	@g++ src/*.cpp -o hello
+	@g++ -Wall src/*.cpp -o hello
 
 run:
 	@echo Output:

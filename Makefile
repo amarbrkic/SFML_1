@@ -2,6 +2,7 @@ all: build run clean
 
 build:
 	@g++ -Wall src/*.cpp -o hello
+	@#g++-10 -Wall -Wextra -std=c++20 src/*.cpp -o hello
 
 run:
 	@echo Output:

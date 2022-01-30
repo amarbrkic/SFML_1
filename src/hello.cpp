@@ -4,23 +4,25 @@
 
 class Person {
 private:
-  uint8_t age=8;
+  uint age = 0;
 
 public:
-  Person(uint8_t);
+  Person(uint);
   ~Person();
-  uint8_t getAge();
+  uint getAge();
 };
 
-Person::Person(uint8_t age) { this->age = age; }
+Person::Person(uint age) { this->age = age; }
 
 Person::~Person() {}
 
-uint8_t Person::getAge() { return this->age; }
+uint Person::getAge() { return this->age; }
 
 int main() {
-  Person* Amar = new Person(55);
+  uint temp;
+  std::cin >> temp;
 
+  Person* Amar = new Person(temp);
   std::cout << Amar->getAge() << "\n";
 
   return EXIT_SUCCESS;

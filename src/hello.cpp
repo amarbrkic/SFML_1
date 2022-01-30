@@ -1,29 +1,17 @@
 #include <iostream>
 #include <array>
-#include <algorithm>
 
-class Person {
-private:
-  uint age = 0;
-
-public:
-  Person(uint);
-  ~Person();
-  uint getAge();
+class Node{
+  
 };
 
-Person::Person(uint age) { this->age = age; }
-
-Person::~Person() {}
-
-uint Person::getAge() { return this->age; }
-
 int main() {
-  uint temp;
-  std::cin >> temp;
+  std::array<uint, 5> arr{5, 4, 3, 2, 1};
 
-  Person* Amar = new Person(temp);
-  std::cout << Amar->getAge() << "\n";
+  for (uint* i = arr.begin(); i != arr.end(); i++) {
+    std::cout << "Number " << *i;
+    std::cout << " on the location " << i << "\n";
+  }
 
   return EXIT_SUCCESS;
 }

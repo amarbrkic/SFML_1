@@ -1,9 +1,9 @@
+// Copyright 2022 Amar Brkic
+
 #include <iostream>
 #include <array>
 
-class Node{
-  
-};
+class Node {};
 
 int main() {
   std::array<uint, 5> arr{5, 4, 3, 2, 1};

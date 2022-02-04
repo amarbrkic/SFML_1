@@ -18,7 +18,7 @@ public:
    * @retval None
    */
   template <typename... Args> void push(size_t nArg, ...) {
-
+    // TODO Safety checks
     va_list arguments;
 
     va_start(arguments, nArg);
@@ -31,8 +31,17 @@ public:
 
     lastElement = mem.at(mem.size() - 1);
   }
-  void pop() {
-    mem.pop_back();
+  /**
+   * @brief  Deletes last element
+   * @note
+   * @param  n: How many elements you want to delete
+   * @retval None
+   */
+  void pop(size_t n) {
+    // TODO Safety checks
+    for (size_t i = 0; i < n; i++) {
+      mem.pop_back();
+    }
     lastElement = mem.at(mem.size() - 1);
   }
   void print() {

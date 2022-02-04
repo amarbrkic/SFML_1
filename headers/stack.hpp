@@ -4,6 +4,11 @@
 
 #include <vector>
 
+/**
+ * @brief  Simple Stack Implementation
+ * @note
+ * @retval None
+ */
 template <typename T> class Stack {
 private:
   std::vector<T> mem;

@@ -6,9 +6,7 @@
 
 int main() {
   Stack<int> stack1;
-  stack1.push(5);
-  std::cout << stack1.lastElement << "\n";
-  stack1.push(6);
-  std::cout << stack1.lastElement << "\n";
+  stack1.push(2,5, 6);
+  stack1.print();
   return EXIT_SUCCESS;
 }
